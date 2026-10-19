@@ -1,0 +1,41 @@
+name: iptv_streamer
+description: Aplicativo IPTV em Flutter para Android (celular/tablet) e Android TV. Suporta playlists M3U/M3U Plus, canais ao vivo, filmes e series.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Gerenciamento de estado (compilacao segura, testavel)
+  flutter_riverpod: ^2.5.1
+  # Navegacao declarativa adaptativa
+  go_router: ^14.2.0
+  # Reproducao de video (motor ExoPlayer/Media3 no Android)
+  video_player: ^2.9.1
+  # Rede
+  http: ^1.2.2
+  # Cache de imagens (logotipos, capas)
+  cached_network_image: ^3.4.1
+  # Persistencia local (configuracoes, favoritos, playlists cadastradas)
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.4
+  # Importacao de arquivo de playlist (Storage Access Framework)
+  file_picker: ^8.1.2
+  # Utilitarios
+  equatable: ^2.0.5
+  collection: ^1.18.0
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

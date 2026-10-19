@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Banner do Android TV (320x180 dp recomendado). Substitua por uma imagem PNG real. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#0E0E10" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <solid android:color="#E50914" />
+            <size android:width="120dp" android:height="12dp" />
+        </shape>
+    </item>
+</layer-list>
